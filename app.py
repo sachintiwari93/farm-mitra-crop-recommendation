@@ -36,3 +36,25 @@ if st.button("Predict Crop"):
     crop = labelencoder.inverse_transform(prediction)
 
     st.success("Recommended Crop: " + crop[0])
+   
+crop_images = {
+"rice":"https://upload.wikimedia.org/wikipedia/commons/6/6f/Rice_plants.jpg",
+"maize":"https://upload.wikimedia.org/wikipedia/commons/0/0c/Maize.jpg",
+"banana":"https://upload.wikimedia.org/wikipedia/commons/8/8a/Banana-Single.jpg",
+"apple":"https://upload.wikimedia.org/wikipedia/commons/1/15/Red_Apple.jpg"
+}
+
+fertilizer = {
+"rice":"Use Nitrogen rich fertilizer",
+"maize":"Use NPK fertilizer",
+"banana":"Use Potassium rich fertilizer",
+"apple":"Use organic compost"
+}
+
+if crop[0] in crop_images:
+    st.image(crop_images[crop[0]], width=300)
+
+st.write("Fertilizer Suggestion:", fertilizer.get(crop[0], "General fertilizer recommended"))
+
+
+    
