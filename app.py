@@ -35,11 +35,11 @@ if st.button("Predict Crop"):
     st.success("Recommended Crop: " + crop[0])
 
     crop_images = {
-        "rice":"https://upload.wikimedia.org/wikipedia/commons/6/6f/Rice_plants.jpg",
-        "maize":"https://upload.wikimedia.org/wikipedia/commons/0/0c/Maize.jpg",
-        "banana":"https://upload.wikimedia.org/wikipedia/commons/8/8a/Banana-Single.jpg",
-        "apple":"https://upload.wikimedia.org/wikipedia/commons/1/15/Red_Apple.jpg"
-    }
+    "rice":"https://cdn.britannica.com/17/176217-050-7D0C0F3D/Rice-plants.jpg",
+    "maize":"https://cdn.britannica.com/44/94444-050-6C2C7C5E/Corn.jpg",
+    "banana":"https://cdn.britannica.com/92/172792-050-8A5C0E9F/Banana.jpg",
+    "apple":"https://cdn.britannica.com/15/176915-050-2B9C4B5F/Red-apples.jpg"
+   }
 
     fertilizer = {
         "rice":"Use Nitrogen rich fertilizer",
