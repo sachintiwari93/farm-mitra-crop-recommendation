@@ -22,8 +22,8 @@ Machine Learning based system that suggests the best crop based on soil and envi
    streamlit run app.py
 
 ## Output
-![Home Screen](Screenshot 2026-04-01 234642.png)
-![Prediction Result](Screenshot 2026-04-01 234719.png)
+![Home Screen](home.png)
+![Prediction Result](PredictionResult.png)
 
 ## Files
 - app.py → main application
